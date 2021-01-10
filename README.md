@@ -84,53 +84,54 @@ Publish the website in the given URL.
 {% extends "website/base.html" %}
 
 {% block content %}
-<div class="peoplecontent">
+    <div class="peoplecontent">
     <h1>Our Crew</h1>
     <div class="crewmembers">
         <div class="crewmember">
             <div class="memberimage">
-                <img src="/static/img/ppl/HOD.jpg" alt="member image" style="width:200px;height:200px;">
+                <img src="/static/img/ppl/HOD.jpg" alt="member image" width="200" height="200">
             </div>
             <div class="membername">OBED OTTA</div>
             <div class="designation">C.E.O </div>
         </div>
         <div class="crewmember">
             <div class="memberimage">
-                <img src="/static/img/ppl/JOSHAN.jpg" alt="member image" style="width:200px;height:200px;>
+                <img src="/static/img/ppl/JOSHAN.jpg" alt="member image" width="200" height="200">
             </div>
             <div class="membername">JOSHAN ATHANESIOUS</div>
             <div class="designation">FRONTEND DEV</div>
         </div>
         <div class="crewmember">
             <div class="memberimage">
-                <img src="/static/img/ppl/Aravind1.png" alt="member image" style="width:200px;height:200px;">
+                <img src="/static/img/ppl/Aravind1.png" alt="member image" width="200" height="200">
             </div>
             <div class="membername">ARAVIND</div>
             <div class="designation">TECHNICAL TEAM</div>
         </div>
         <div class="crewmember">
             <div class="memberimage">
-                <img src="/static/img/ppl/Arjun1.jpg" alt="member image" style="width:200px;height:200px;">
+                <img src="/static/img/ppl/Arjun1.jpg" alt="member image" width="200" height="200">
             </div>
             <div class="membername">ARJUNRAJ</div>
             <div class="designation"> R & D HEAD </div>
         </div>
         <div class="crewmember">
             <div class="memberimage">
-                <img src="/static/img/ppl/Vivek.jpg" alt="member image" style="width:200px;height:200px;">
+                <img src="/static/img/ppl/Vivek.jpg" alt="member image" width="200" height="200">
             </div>
             <div class="membername">VIVEK </div>
             <div class="designation"> DESIGN TEAM </div>
         </div>
         <div class="crewmember">
             <div class="memberimage">
-                <img src="/static/img/ppl/Arun.jpeg" alt="member image" style="width:200px;height:200px;">
+                <img src="/static/img/ppl/Arun.jpeg" alt="member image" width="200" height="200">
             </div>
             <div class="membername">ARUNRAJ</div>
             <div class="designation"> MARKETING HEAD </div>
         </div>
     </div>
-    {% endblock  %}
+    </div>
+{% endblock  %}
 ```
 ### products.html
 ```
@@ -233,59 +234,38 @@ Publish the website in the given URL.
 {% extends "website/base.html" %}
 
 {% block content %}
-<form action="//submit.form" id="ContactUs100" method="post" onsubmit="return ValidateForm(this);">
-<script type="text/javascript">
-function ValidateForm(frm) {
-if (frm.Name.value == "") { alert('Name is required.'); frm.Name.focus(); return false; }
-if (frm.FromEmailAddress.value == "") { alert('Email address is required.'); frm.FromEmailAddress.focus(); return false; }
-if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.FromEmailAddress.focus(); return false; }
-if (frm.Comments.value == "") { alert('Please enter comments or questions.'); frm.Comments.focus(); return false; }
-return true; }
-</script>
-<table style="width:100%;max-width:550px;border:0;" cellpadding="8" cellspacing="0">
-<tr> <td>
-<label for="Name">Name*:</label>
-</td> <td>
-<input name="Name" type="text" maxlength="60" style="width:100%;max-width:250px;" />
-</td> </tr> <tr> <td>
-<label for="PhoneNumber">Phone number:</label>
-</td> <td>
-<input name="PhoneNumber" type="text" maxlength="43" style="width:100%;max-width:250px;" />
-</td> </tr> <tr> <td>
-<label for="FromEmailAddress">Email address*:</label>
-</td> <td>
-<input name="FromEmailAddress" type="text" maxlength="90" style="width:100%;max-width:250px;" />
-</td> </tr> <tr> <td>
-<label for="Comments">Comments*:</label>
-</td> <td>
-<textarea name="Comments" rows="7" cols="40" style="width:100%;max-width:350px;"></textarea>
-</td> </tr> <tr> <td>
-* - required fields
-</td> <td>
-<input name="skip_Submit" type="submit" value="Submit" />
-</td> </tr>
-</table>
-</form>
-{% endblock  %}
+    <div class="contactuscontent">
+        <div class="contactbox">
+            <div>
+                <img src="/static/img/contact.png" alt="contactusimg">
+            </div>
+        </div>
+        <hr/>
+        <div class="contactemail"><h1>Email: arun@ar.ac.in</h1></div>
+        <div class="contactphone"><h2>Phone: +91-7200742352</h2></div>
+        <div class="contactphone"><h2>Address: © AR pvt,Silicon valley, Microsoft, Google</h2></div>
+        <hr/>
+    </div>
+
+{% endblock %}
 ```
 ## OUTPUT:
-![output](./static/img/output1.png)
+![output](./static/img/output/o1.png)
 
-![output](./static/img/output2.png)
+![output](./static/img/output/o2.png)
 
-![output](./static/img/output3.png)
+![output](./static/img/output/o3.png)
 
-![output](./static/img/output4.png)
+![output](./static/img/output/o4.png)
 
 ## CODE VALIDATION REPORT:
-![output](./static/img/report1.png)
+![output](./static/img/report/v1.png)
 
-![output](./static/img/report2.png)
+![output](./static/img/report/v2.png)
 
-![output](./static/img/report3.png)
+![output](./static/img/report/v3.png)
 
-![output](./static/img/report4.png)
+![output](./static/img/report/v4.png)
 
-![output](./static/img/report5.jpg)
 ## RESULT:
 Thus a website is designed for the chip manufacturing company and is hosted in the URL http://arun.student.saveetha.in:8000/. HTML code is validated.
